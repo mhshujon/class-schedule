@@ -1,0 +1,195 @@
+::selection {
+    color: #8c6b48;
+}
+body {
+    background-color: #242f44;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    padding: 10px;
+    color: #8c6b48;
+    background-color: white;
+    margin-block-start: 0ex;
+    margin-block-end: 0ex;
+}
+
+h2 {
+    font-size: 24px;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+h3 {
+    font-size: 20px;
+    /*padding: 15px;*/
+    text-transform: uppercase;
+    text-align: left;
+    /*margin-left: px;*/
+    font-weight: 500;
+    line-height: 2.7;
+    letter-spacing: 0.8px;
+    text-align: center;
+}
+
+th {
+    border: 2px solid #8c6b48;
+}
+
+table {
+    text-align: center;
+    margin: 35px auto;
+}
+
+td {
+    border: 2px solid #8c6b48;
+    /*width: 200px;*/
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 5px;
+    background-color: #242f44;
+    z-index: 5;
+}
+footer h3 {
+    display: inline-block;
+    font-size: 14px;
+    background-color: #242f44;
+}
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 800px;
+}
+.left {
+    width: 150px;
+}
+#allah{
+    max-width: 60px;
+}
+header{
+    max-width: 1920px;
+    border: 4px solid #8c6b48;
+    background-color: white;
+    margin-block-start: 0ex;
+    margin-block-end: 0ex;
+    text-align: center;
+}
+header h2{
+    font-size: 25px;
+    color: #8c6b48;
+    font-weight: bold;
+    letter-spacing: 7px;
+}
+#raatri, #monir{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+a{
+    color: #c4deef;
+}
+a:hover{
+    color: #8c6b48;
+    text-decoration: none;
+}
+i{color: #8c6b48}
+input, button{
+    all: unset;
+    max-width: 85px;
+}
+.alert{
+    background: white;
+    border-color: #8c6b48;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-radius: 5px;
+    border-left: 6px solid #8c6b48;
+    border-right: 2px solid #8c6b48;
+    border-top: 2px solid #8c6b48;
+    border-bottom: 2px solid #8c6b48;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+.alert.showAlert{
+    opacity: 0.99;
+    pointer-events: auto;
+}
+.alert.show{
+    animation: show_slide 1s ease forwards;
+}
+@keyframes show_slide {
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(-10%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+}
+.alert.hide{
+    animation: hide_slide 1s ease forwards;
+}
+@keyframes hide_slide {
+    0%{
+        transform: translateX(-10px);
+    }
+    40%{
+        transform: translateX(0%);
+    }
+    80%{
+        transform: translateX(-10%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.alert .fa-exclamation-circle{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8c6b48;
+    font-size: 30px;
+}
+.alert .msg{
+    padding: 0 20px;
+    font-size: 18px;
+    color: #8c6b48;
+}
+.alert .close-btn{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #f8e0c7;
+    padding: 20px 18px;
+    cursor: pointer;
+}
+.alert .close-btn:hover{
+    background: #fcc994;
+}
+.alert .close-btn .fas{
+    color: #8c6b48;
+    font-size: 22px;
+    /*line-height: 40px;*/
+}
+.sat:hover{
+    color: #8c6b48;
+}
